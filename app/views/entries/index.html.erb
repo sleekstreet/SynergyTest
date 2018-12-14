@@ -1,0 +1,57 @@
+<h1>Listing entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Address</th>
+      <th>Apt</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Email</th>
+      <th>Purchtime</th>
+      <th>Interest</th>
+      <th>Posspurch</th>
+      <th>Opinion</th>
+      <th>Partcipate</th>
+      <th>Minor</th>
+      <th>Sign</th>
+      <th>News</th>
+      <th>Dealercont</th>
+      <th>Time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.firstName %></td>
+        <td><%= entry.lastName %></td>
+        <td><%= entry.address %></td>
+        <td><%= entry.apt %></td>
+        <td><%= entry.city %></td>
+        <td><%= entry.state %></td>
+        <td><%= entry.email %></td>
+        <td><%= entry.purchTime %></td>
+        <td><%= entry.interest %></td>
+        <td><%= entry.possPurch %></td>
+        <td><%= entry.opinion %></td>
+        <td><%= entry.partcipate %></td>
+        <td><%= entry.minor %></td>
+        <td><%= entry.sign %></td>
+        <td><%= entry.news %></td>
+        <td><%= entry.dealerCont %></td>
+        <td><%= entry.time %></td>
+        <td><%= link_to 'Show', entry %></td>
+        <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+        <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry', new_entry_path %>

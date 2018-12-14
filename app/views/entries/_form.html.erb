@@ -1,0 +1,85 @@
+<%= form_for(@entry) do |f| %>
+  <% if @entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+
+      <ul>
+      <% @entry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :firstName %><br>
+    <%= f.text_field :firstName %>
+  </div>
+  <div class="field">
+    <%= f.label :lastName %><br>
+    <%= f.text_field :lastName %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :apt %><br>
+    <%= f.text_field :apt %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :purchTime %><br>
+    <%= f.text_field :purchTime %>
+  </div>
+  <div class="field">
+    <%= f.label :interest %><br>
+    <%= f.text_field :interest %>
+  </div>
+  <div class="field">
+    <%= f.label :possPurch %><br>
+    <%= f.text_field :possPurch %>
+  </div>
+  <div class="field">
+    <%= f.label :opinion %><br>
+    <%= f.number_field :opinion %>
+  </div>
+  <div class="field">
+    <%= f.label :partcipate %><br>
+    <%= f.text_field :partcipate %>
+  </div>
+  <div class="field">
+    <%= f.label :minor %><br>
+    <%= f.check_box :minor %>
+  </div>
+  <div class="field">
+    <%= f.label :sign %><br>
+    <%= f.text_field :sign %>
+  </div>
+  <div class="field">
+    <%= f.label :news %><br>
+    <%= f.check_box :news %>
+  </div>
+  <div class="field">
+    <%= f.label :dealerCont %><br>
+    <%= f.check_box :dealerCont %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.datetime_select :time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
