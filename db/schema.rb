@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181214185315) do
+ActiveRecord::Schema.define(version: 20181216102700) do
 
   create_table "entries", force: true do |t|
     t.string   "firstName"
@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20181214185315) do
     t.string   "state"
     t.string   "email"
     t.string   "purchTime"
-    t.string   "interest"
     t.string   "possPurch"
     t.integer  "opinion"
     t.string   "partcipate"
@@ -33,6 +32,12 @@ ActiveRecord::Schema.define(version: 20181214185315) do
     t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "zip"
+    t.boolean  "interest_LEAF"
+    t.boolean  "interest_Kicks"
+    t.boolean  "interest_RogueSport"
+    t.boolean  "interest_Rogue"
+    t.integer  "rating"
   end
 
 end

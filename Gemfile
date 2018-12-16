@@ -45,3 +45,12 @@ gem 'bootstrap'
 # Use Parsley.js
 gem 'parsley-rails'
 
+# For vulnerabilities
+#
+# gem "activerecord", ">= 4.1.14.1"
+# gem "actionpack", ">= 4.2.5.1"
+# gem "activesupport", ">= 4.1.11"
+# gem "activemodel", ">= 4.1.14.1"
+# gem "actionview", ">= 4.2.7.1"
+# gem "rack", ">= 1.6.11"
+
