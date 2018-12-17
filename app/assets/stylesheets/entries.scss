@@ -1,3 +1,100 @@
-// Place all the styles related to the Entries controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'mixins';
+
+/**
+ *
+ * 	Stylesheet for Nissan Mobility Tour form
+ *	
+ *	1.0 Variables / Placeholders / fonts
+ *	2.0 Block Containers
+ * 	3.0 Block Elements
+ *	4.0 Modifiers
+ *
+ **/
+
+
+ /**
+  *
+  *	1.0 Variables / Placeholders
+  *
+  *
+  **/
+
+  	/** 	1.0 Variables		**/
+	$lgGrey:#f7f8f9;
+	$midGrey:#c5c5c5;
+	$marron:#c6132d;
+
+
+
+	/*		1.1 Font definitions 	*/
+	@font-face{
+		font-family: 'nissan';
+		src: url('app/assets/fonts/NissanBrandW01-Regular.eot');
+		src: url('app/assets/fonts/NissanBrandW01-Regular.eot') format('embedded-opentype'),
+			url('app/assets/fonts/NissanBrandW01-Regular.svg') format('svg'),
+			url('app/assets/fonts/NissanBrandW01-Regular.ttf') format('truetype');
+	}		
+
+	h1,h2,h3,h4,h5,h5{font-family: 'nissan','Helvetica Neue', Arial, sans-serif;}
+
+ /**
+  *
+  *	2.0 Container Styles
+  *
+  *
+  **/
+
+  	.new_entry{
+
+  		
+  		input[type=text], select{
+  			width:100%;
+  			padding:7px;
+  		}
+  		select{height:44px}
+  		.row{margin:15px 0}
+		&--lgGrey{background-color:$lgGrey;}
+  		&__box {
+  			padding:15px;
+  			border:1px solid $midGrey;
+  			
+  		}
+  		&__signature-pad{
+  			position:absolute;
+  			width:400px;
+  			height:200px;
+  		}
+
+  		&__submit{
+  			background-color:$marron;
+  			color:white;
+  			font-size:1.4rem;
+  			padding:15px 0;
+  			margin:15px 0;
+  		}
+  		&__terms{
+  			height:400px;
+  			overflow:scroll;
+
+  		}
+  	}
+  	
+ 
+
+  	.hero{
+  		.row{margin:0 0 10px 0;}
+  	}
+
+  	.hero__title{
+  		text-align:right;
+  	}
+
+
+
+ /**
+  *
+  *	3.0 Block Containers
+  *
+  *
+  **/
+

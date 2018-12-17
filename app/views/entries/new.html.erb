@@ -1,5 +1,8 @@
-<h1>New entry</h1>
 
+<div class="container">
+<%= render 'header' %>
 <%= render 'form' %>
 
 <%= link_to 'Back', entries_path %>
+</div>
+<script>$('#new_entry').parsley();</script>
