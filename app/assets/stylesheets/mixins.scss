@@ -1,0 +1,24 @@
+@mixin mediaQueriesDim($item, $xs, $sm, $md, $lg, $xl){
+	@media screen and (max-width:360px){
+		@if type-of($item)==map{
+
+		}
+		@else{
+			$item:$xs;
+		}
+		
+	}
+	@media screen and (max-width:540px){
+		$item:$sm;
+	}
+	@media screen and (max-width:720px){
+		$item:$md;
+	}
+	@media screen and (max-width:960px){
+		$item:$lg;
+	}
+	@media screen and (max-width:1140px){
+		$item:$xl;
+	}
+
+}

@@ -69,6 +69,6 @@ class EntriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def entry_params
-      params.require(:entry).permit(:firstName, :lastName, :address, :apt, :city, :state, :email, :purchTime, :interest, :possPurch, :opinion, :partcipate, :minor, :sign, :news, :dealerCont, :time)
+      params.require(:entry).permit(:firstName, :lastName, :address, :apt, :city, :state, :zip, :email, :purchTime, :interest_LEAF, :interest_Kicks, :interest_RogueSport, :interest_Rogue, :possPurch, :opinion, :partcipate, :minor, :sign, :news, :dealerCont, :time)
     end
 end
